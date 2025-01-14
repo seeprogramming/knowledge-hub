@@ -37,3 +37,27 @@ return (
     </div>
 );
 ```
+
+`Note: Without parentheses, any code on the lines after return will be ignored! `
+
+##### Example
+
+```javascript
+export default function Profile() {
+    return (
+        <img src='https://i.imgur.com/MK3eW3Am.jpg' alt='Katherine Johnson' />
+    );
+}
+```
+
+3.Can we Nest Component Definition?
+
+Components can render other components, but you must never nest their definitions:
+
+![Nesting1](./images/nesting_1.png)
+
+The snippet above is very slow and causes bugs. Instead, define every component at the top level:
+
+![Nesting2](./images/nesting_2.png)
+
+When a child component needs some data from a parent, pass it by props instead of nesting definitions.
