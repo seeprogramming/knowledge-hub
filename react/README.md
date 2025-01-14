@@ -10,13 +10,15 @@ Component is a basic Building Block of our React Application. React applications
 
 ##### Steps To Create a React Component :
 
-1.  Export the component ⇒ The export default prefix is a standard JavaScript syntax (not specific to React). It lets you mark the main function in a file so that you can later import it from other files. 2. Define the function ⇒ function Profile() { } you define a JavaScript function with the name Profile.
+1.  Export the component ⇒ The export default prefix is a standard JavaScript syntax (not specific to React). It lets you mark the main function in a file so that you can later import it from other files.
 
-`Note : React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!`
+2.  Define the function ⇒ `function Profile() { }` you define a JavaScript function with the name Profile.
 
-3. Add markup ⇒
-   The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, but it is actually JavaScript under the hood! This syntax is called JSX, and it lets you embed markup inside JavaScript.
-   Return statements can be written all on one line, as in this component:
+    `Note : React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!`
+
+3.  Add markup ⇒
+    The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, but it is actually JavaScript under the hood! This syntax is called JSX, and it lets you embed markup inside JavaScript.
+    Return statements can be written all on one line, as in this component:
 
 ##### Example
 
