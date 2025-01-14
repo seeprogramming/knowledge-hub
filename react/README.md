@@ -61,3 +61,24 @@ The snippet above is very slow and causes bugs. Instead, define every component 
 ![Nesting2](./images/nesting_2.png)
 
 When a child component needs some data from a parent, pass it by props instead of nesting definitions.
+
+4.What is JSX?
+
+1. JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+
+2. React components use a syntax extension called JSX to represent that markup.
+
+3. JSX looks a lot like HTML, but it is a bit stricter and can display dynamic information.
+
+4. The best way to understand this is to convert some HTML markup to JSX markup.
+
+5. JSX is very minimal as a templating language because it lets you organize data and logic using JavaScript.
+
+##### The rules of JSX
+
+1. Return a single root element ⇒ To return multiple elements from a component, wrap them with a single parent tag.
+   For example, you can use a <div>:
+
+##### Example
+
+![jsx](./images/jsx.png)
