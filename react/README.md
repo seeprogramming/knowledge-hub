@@ -86,3 +86,7 @@ When a child component needs some data from a parent, pass it by props instead o
 If you don’t want to add an extra <div> to your markup, you can write <> and </> instead of Parent tag. This empty tag is called a Fragment. Fragments let you group things without leaving any trace in the browser HTML tree.
 
 2. Close all the tags ⇒ JSX requires tags to be explicitly closed: self-closing tags like <img> must become <img />, and wrapping tags like `<li>` oranges must be written as `<li>oranges</li>`
+
+3. camelCase all most of the things! ⇒ JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
+
+    This is why, in React, many HTML and SVG attributes are written in camelCase. For example, instead of stroke-width you use strokeWidth. Since class is a reserved word, in React you write className instead, named after the corresponding DOM property:
