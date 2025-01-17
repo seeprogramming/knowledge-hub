@@ -90,3 +90,7 @@ If you don’t want to add an extra <div> to your markup, you can write <> and <
 3. camelCase all most of the things! ⇒ JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
 
     This is why, in React, many HTML and SVG attributes are written in camelCase. For example, instead of stroke-width you use strokeWidth. Since class is a reserved word, in React you write className instead, named after the corresponding DOM property:
+
+    `Note : 1. JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.`
+
+    `2.For historical reasons, aria-_ and data-_ attributes are written as in HTML with dashes.`
