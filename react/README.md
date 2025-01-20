@@ -94,3 +94,7 @@ If you don’t want to add an extra <div> to your markup, you can write <> and <
     `Note : 1. JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.`
 
     `2.For historical reasons, aria-_ and data-_ attributes are written as in HTML with dashes.`
+
+4. Why do multiple JSX tags need to be wrapped?
+
+    JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
