@@ -95,6 +95,14 @@ If you don’t want to add an extra <div> to your markup, you can write <> and <
 
     `2.For historical reasons, aria-_ and data-_ attributes are written as in HTML with dashes.`
 
-4. Why do multiple JSX tags need to be wrapped?
+4.Why do multiple JSX tags need to be wrapped?
 
-    JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+
+5.Why does React mix markup with rendering logic?
+
+The Web has been built on HTML, CSS, and JavaScript. For many years, web developers kept content in HTML, design in CSS, and logic in JavaScript—often in separate files! Content was marked up inside HTML while the page’s logic lived separately in JavaScript.But as the Web became more interactive, logic increasingly determined content. JavaScript was in charge of the HTML! This is why in React, rendering logic and markup live together in the same place—components.
+
+6.What is Props?
+
+React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions. you can pass any props to your own components to customize them. Props serve the same role as arguments serve for functions—in fact, props are the only argument to your component! React component functions accept a single argument, a props object
