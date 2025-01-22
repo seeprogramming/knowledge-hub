@@ -106,3 +106,13 @@ The Web has been built on HTML, CSS, and JavaScript. For many years, web develop
 6.What is Props?
 
 React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions. you can pass any props to your own components to customize them. Props serve the same role as arguments serve for functions—in fact, props are the only argument to your component! React component functions accept a single argument, a props object
+
+Specifying a default value for a prop ⇒ If you want to give a prop a default value to fall back on when no value is specified, you can do it with the destructuring by putting = and the default value right after the parameter:
+
+Example:
+
+```javascript
+function Avatar({ person, size = 100 }) {
+    // ...
+}
+```
